@@ -1,12 +1,9 @@
-/* aca iniciamos con el reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", serif; /* font family declarada para todo el proyecto*/
+  font-family: "Roboto", serif;
 }
-
-/* los estilos del header */
 
 header {
   background-color: #dda853;
@@ -15,6 +12,18 @@ header {
   align-items: center;
   padding-right: 20px;
   margin: 0px 30px;
+}
+header nav ul {
+  color: whitesmoke;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+a:hover {
+  /* aplico pseudo clase que cambie el estado de la etiqueta*/
+  color: antiquewhite;
+  text-decoration: underline;
 }
 
 .logo {
@@ -26,12 +35,6 @@ header {
   margin-left: 10%;
   width: 15%;
 }
-header nav ul {
-  color: whitesmoke;
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
 
 a {
   color: antiquewhite;
@@ -39,13 +42,6 @@ a {
   font-weight: bold;
 }
 
-a:hover {
-  /* aplico pseudo clase que cambie el estado de la etiqueta*/
-  color: #a6cdc6;
-  text-decoration: underline;
-}
-
-/* los estilos del body */
 body {
   background-color: #fbf5dd;
   height: 60%;
@@ -95,6 +91,7 @@ h2 {
   height: 100%;
   object-fit: cover;
 }
+
 .contenido {
   width: 60%;
   padding: 20px;
@@ -111,21 +108,17 @@ h2 {
     align-items: center;
   }
 }
-
 @media (min-width: 728px) {
   .container {
     flex-direction: row;
   }
 }
-
 @media (min-width: 1024px) {
   .container {
     flex-direction: row;
   }
 }
-
 /* flex para el formulario de contacto */
-
 form {
   display: flex;
   flex-direction: column;
@@ -162,13 +155,11 @@ img {
     grid-template-columns: repeat(1, 1fr);
   }
 }
-
 @media (min-width: 728px) {
   .calzado .contenedor-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-
 @media (min-width: 1024px) {
   .calzado .contenedor-grid {
     grid-template-columns: repeat(3, 1fr);
@@ -186,6 +177,7 @@ footer {
 li ul a {
   text-decoration: none;
 }
+
 img {
   margin-left: 25%;
 }
@@ -203,3 +195,36 @@ footer ul li a {
   color: #16404d;
   line-height: 1.5;
 }
+
+/* footer */
+footer {
+  background-color: #dda853;
+  height: 40%;
+  text-align: center;
+  font-weight: bolder;
+  margin: 30px;
+}
+
+li ul a {
+  text-decoration: none;
+}
+
+img {
+  margin-left: 25%;
+}
+
+.imagenes-galeria {
+  margin-left: 0%;
+}
+
+footer ul {
+  list-style: none;
+  margin: 10px;
+}
+
+footer ul li a {
+  color: whitesmoke;
+  line-height: 1.5;
+}
+
+/*# sourceMappingURL=style.css.map */
